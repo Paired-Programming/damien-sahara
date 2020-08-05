@@ -49,4 +49,23 @@ button {
 }
 
 /*Start of Pills*/
+.badge {
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+}
 
+.d-pill {
+    background-color: #e6563b;
+}
+.d2-pill {
+    background-color: #eb9d3a;
+}
+
+.s-pill {
+    background-color: #7cb06c;
+}
+
+.h-pill {
+    background-color: #00aba9;
+}
