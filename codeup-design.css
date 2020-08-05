@@ -24,3 +24,26 @@ body {
 }
 
 /*Services Section*/
+
+button {
+    width: 105px;
+    height: 105px;
+    border-radius: 100% !important;
+    border: 5px solid white !important;
+}
+
+.design-button {
+    background-color: #e6563b;
+}
+
+.develop-button {
+    background-color: #eb9d3a;
+}
+
+.support-button {
+    background-color: #7cb06c;
+}
+
+.host-button {
+    background-color: #00aba9;
+}
