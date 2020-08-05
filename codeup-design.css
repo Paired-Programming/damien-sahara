@@ -5,3 +5,22 @@ body {
     background-color: #e6e6e6 !important;
 }
 
+/*Logo and Company name section */
+
+.logo {
+    width: 105px;
+    height: 105px;
+}
+
+.codeup-design {
+    font-family: 'Abel';
+}
+
+/*NavBar Section*/
+.navbar-nav {
+    font-family: 'Abel';
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*Services Section*/
