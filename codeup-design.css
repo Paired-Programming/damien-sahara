@@ -69,3 +69,8 @@ button {
 .h-pill {
     background-color: #00aba9;
 }
+
+/*The Last section */
+.blog-container>img {
+    width: 10%;
+}
