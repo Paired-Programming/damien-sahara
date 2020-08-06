@@ -65,7 +65,10 @@ button {
 
 .featured-project img{
     border: 5px solid lightgrey;
-    border-radius: 3%
+    border-radius: 3%;
+    width: 100% !important;
+
+
 }
 
 .badge {
@@ -95,7 +98,7 @@ span {
 
 /*The Last section */
 .blog-img {
-    width: 50%;
+    width: 25%;
 }
 
 .last-links {
@@ -106,4 +109,18 @@ span {
 
 hr {
     width: 50%;
+}
+
+
+.container {
+    display: flex;
+}
+.left-half {
+    flex: 3;
+    padding: 1rem;
+}
+
+.right-half {
+    flex: 1;
+    padding: 1rem;
 }
