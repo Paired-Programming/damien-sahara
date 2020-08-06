@@ -97,3 +97,9 @@ span {
 .blog-img {
     width: 10%;
 }
+
+.last-links {
+    font-family: "Anton";
+    text-decoration: none;
+    color: black;
+}
