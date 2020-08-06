@@ -103,3 +103,7 @@ span {
     text-decoration: none;
     color: black;
 }
+
+hr {
+    width: 50%;
+}
