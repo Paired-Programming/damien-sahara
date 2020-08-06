@@ -99,12 +99,16 @@ span {
 /*The Last section */
 .blog-img {
     width: 25%;
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .last-links {
     font-family: "Anton";
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 hr {
