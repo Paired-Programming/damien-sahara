@@ -23,6 +23,13 @@ body {
     font-weight: bold;
 }
 
+/*Title*/
+
+.title-text {
+    font-family: "Anton"
+}
+
+
 /*Services Section*/
 
 button {
@@ -52,10 +59,23 @@ button {
 }
 
 /*Start of Pills*/
+.work-last {
+    font-family: "Abel";
+}
+
+.featured-project img{
+    border: 5px solid lightgrey;
+    border-radius: 3%
+}
+
 .badge {
     border-radius: 100%;
     width: 18px;
     height: 18px;
+}
+
+span {
+    font-family: "Anton" ;
 }
 
 .d-pill {
