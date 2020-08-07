@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:z-index="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,7 +20,18 @@
 <div>
     <header id="top">
         <!--Start of Logo and Company name section -->
-        <div class="container-fluid text-center">
+        <div class="white-space">
+            <nav class="navbar-sm d-none d-sm-block d-md-none"> <!-- Visible only on SM -->
+                <ul class="nav-links d-flex justify-content-between">
+                    <li class="nav-item-sm"><a class="nav-item-sm" href="#">Services</a></li>
+                    <li class="nav-item-sm"><a class="nav-item-sm" href="#">Work</a></li>
+                    <li class="nav-item-sm"><a class="nav-item-sm" href="#"></a></li>
+                    <li class="nav-item-sm"><a class="nav-item-sm" href="#">Blog</a></li>
+                    <li class="nav-item-sm"><a class="nav-item-sm" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid text-center mt-5 d-md-none d-lg-block">
             <div class="row logo-row">
                 <div class="col-md-6">
                     <img src="img/logo.png" class="img-fluid rounded mx-auto d-block logo" alt="responsive image">
@@ -30,13 +41,14 @@
                 </div>
             </div>
         </div>
+
         <!--End of Logo and Company name section -->
 
-        <!-- Start of NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Start of NavBar for XS-->
+        <nav class="navbar navbar-expand-lg hide-nav d-block d-sm-none"><!--Visible only on XS-->
             <div class="row">
             <div class="col-12 navbar-expand">
-                <div class="navbar-nav">
+                <div class="navbar-nav d-flex justify-content-center">
                     <a class="nav-item nav-link" href="#">Services</a>
                     <a class="nav-item nav-link" href="#">Work</a>
                     <a class="nav-item nav-link" href="#">Blog</a>
@@ -45,7 +57,23 @@
             </div>
             </div>
         </nav>
-        <!-- End of NavBar -->
+        <!-- End of NavBar XS -->
+
+        <!-- Logo and Navbar for MD -->
+        <nav class="navbar navbar-expand-lg hide-nav d-none d-md-block d-lg-none"><!--Visible only on MD-->
+            <div class="row">
+                <div class="col-12 navbar-expand">
+                    <div class="navbar-nav d-flex justify-content-center">
+                        <a class="nav-item nav-link" href="#">Services</a>
+                        <a class="nav-item nav-link" href="#">Work</a>
+                        <a class="nav-item nav-link" href="#">Blog</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Logo and Navbar for MD -->
+
     </header>
     <!-- Header Ends -->
 
@@ -68,11 +96,11 @@
 
     <div class="container d-flex justify-content-center">
         <div class="d-flex flex-wrap justify-content-center">
-            <button type="button" class="btn btn-lg design-button m-2 p-0">Design</button>
-            <button type="button" class="btn btn-lg develop-button m-2 p-0">Develop</button>
+            <button type="button" class="btn btn-lg design-button main-buttons m-2 p-0">Design</button>
+            <button type="button" class="btn btn-lg develop-button main-buttons m-2 p-0">Develop</button>
             <div class="col-12 d-block d-sm-none"></div>
-            <button type="button" class="btn btn-lg support-button m-2 p-0">Support</button>
-            <button type="button" class="btn btn-lg host-button m-2 p-0">Host</button>
+            <button type="button" class="btn btn-lg support-button main-buttons m-2 p-0">Support</button>
+            <button type="button" class="btn btn-lg host-button main-buttons m-2 p-0">Host</button>
         </div>
     </div>
 
@@ -84,10 +112,10 @@
     <!-- End of Horizontal Line -->
 
     <!-- Start of Selected Work -->
-    <div class="container">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
         <div class="row">
-            <div class="col-8">
-                <h4 class="work-last">SELECTED WORK</h4>
+            <div class="col-12">
+                <h4 class="work-last text-center mt-5">SELECTED WORK</h4>
                 <div class="row left-half">
                     <div class="col-md-6 col-sm-6 featured-project">
                         <img src="img/apple-ipad.jpg" class="" alt="apple-laptop">
@@ -109,8 +137,6 @@
                         </p>
 
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-12 col-md-6 col-sm-6 featured-project">
                         <img src="img/man.jpg" class="" alt="man">
                         <p class="work-last">FEATURED PROJECT
@@ -170,6 +196,7 @@
                 <!-- End of Last Tweet -->
             </div>
         </div>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

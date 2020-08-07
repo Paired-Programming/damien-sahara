@@ -6,14 +6,31 @@ body {
 }
 
 /*Logo and Company name section */
-
 .logo {
     width: 105px;
     height: 105px;
+    position: absolute;
+    bottom: 2em;
+    left: 12em;
+}
+.white-space{
+    border: none;
+    width: auto;
+    background-color: white;
+    height: 70px;
+    margin-top: 3em;
 }
 
+.logo-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .codeup-design {
     font-family: 'Abel';
+    text-align: center;
+    margin-top: auto;
 }
 
 /*NavBar Section*/
@@ -21,7 +38,16 @@ body {
     font-family: 'Abel';
     font-size: larger;
     font-weight: bold;
+    background-color: #e6e6e6;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+
 
 /*Title*/
 
@@ -32,13 +58,13 @@ body {
 
 /*Services Section*/
 
-button {
+.main-buttons {
     width: 105px;
     height: 105px;
     border-radius: 100% !important;
     border: 5px solid white !important;
-    color: white !important;
-    font-family: "anton";
+    color: white;
+    font-family: "Anton";
 }
 
 .design-button {
@@ -129,17 +155,51 @@ hr {
     padding: 1rem;
 }
 
-Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap
+span {
+    float: right;
+    margin: 0.25em;
+}
 
-Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
 
-Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+        width: 105px;
+        height: 105px;
+        position: absolute;
+        bottom: 2em;
+        left: 14rem;
 
-Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+    }
 
-Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+    .navbar.nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar-sm {
+        max-width: 85%;
+        max-height: 100%;
+    }
+    .nav-item-sm {
+        list-style: none;
+        font-family: "Abel";
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) and (max-width: 992px){} */
+
+/*Large devices (desktops, 992px and up)*/
+/**@media (min-width: 992px) {*/
+/*    */
+/*}*/
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) { ... }*/
