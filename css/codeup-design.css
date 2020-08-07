@@ -190,10 +190,17 @@ No media query for `xs` since this is the default in Bootstrap*/
         color: black;
         font-size: 18px;
     }
+    .md-view {
+        display: none;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) and (max-width: 992px){} */
+/*@media (min-width: 768px) and (max-width: 992px){*/
+/*    .left-half{*/
+
+/*    }*/
+/*}*/
 
 /*Large devices (desktops, 992px and up)*/
 /**@media (min-width: 992px) {*/
